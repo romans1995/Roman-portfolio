@@ -1,0 +1,45 @@
+.width {
+  height: calc(100vh - 75px);
+}
+.center {
+  position: relative;
+  padding: 10px;
+  margin-top: 13%;
+  margin-left: 20%;
+}
+.title {
+  font-size: xxx-large;
+  text-shadow: -3px 1px #0000007a;
+}
+.secondaryTxt {
+  font-size: x-large;
+}
+.icons {
+  box-sizing: inherit;
+  margin: auto;
+  right: 52%;
+  position: absolute;
+  top: 43%;
+}
+@media only screen and (max-width: 1200px) {
+  .icons {
+    box-sizing: inherit;
+    margin: auto;
+    right: 37%;
+    position: absolute;
+    top: 63%;
+  }
+}
+@media only screen and (max-width:640px) {
+  .width {
+    height: calc(80vh - 75px);
+    overflow-x: hidden;
+  }
+  .icons {
+    box-sizing: inherit;
+    margin: auto;
+    right: 37%;
+    position: absolute;
+    top: 83%;
+  }
+}

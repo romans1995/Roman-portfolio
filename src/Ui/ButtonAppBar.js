@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -6,13 +6,15 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import profImg from "./r-LOGO.png";
 import classes from "./ButtonAppBar.module.css";
-import NightlightRoundIcon from "@mui/icons-material/NightlightRound";
-import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import MuiSwitch from './MUISwitch';
 import styled from "@emotion/styled";
 
 const ToolbarButton = styled(Button)`
   font-weight: bold;
+  @media only screen and (max-width:640px) {
+    margin-right: 25px;
+    position: sticky;
+  }
 `;
 
 const ProfileImage = styled('img')`

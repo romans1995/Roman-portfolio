@@ -42,12 +42,27 @@
 @media only screen and (max-width: 640px) {
     .aboutwidth {
         width: 100%;
-        height: calc(200vh - 75px);
+        height: calc(110vh - 75px);
         display: flex;
         justify-content: space-between;
         align-content: space-around;
         flex-wrap: wrap;
         overflow-x: hidden;
         flex-direction: row;
+        
+    }
+    .title{
+        font-size: xxx-large;
+        text-shadow: -3px 1px #0000007a;
+        text-align: center;
+    }
+    .longText{
+        padding: 10px;
+        margin: auto;
+        text-align: center;
+    }
+    .imag{
+        width:300px;
+        margin: auto;  
     }
 }

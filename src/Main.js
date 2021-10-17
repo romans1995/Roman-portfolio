@@ -24,7 +24,7 @@ const Main = (props) => {
     <div className={classes.width}>
       <BackImage src={Bg1} />
       <div className={classes.center}>
-        <h1 className={classes.title}>Roman Stavinsky</h1>
+        <h1 className={classes.title}>Romman Stavinsky</h1>
         <h3 className={classes.secondaryTxt}>Go big or go BIGGER</h3>
         <StyledBtn variant="contained" src="#">
           About me

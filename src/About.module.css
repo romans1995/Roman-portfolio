@@ -10,8 +10,8 @@
  
 }
 .longText{
-    padding: 10px;
     margin: auto;
+    width: 100vh;
 }
 .imag{
     width:600px;  
@@ -42,25 +42,28 @@
 @media only screen and (max-width: 640px) {
     .aboutwidth {
         width: 100%;
-        height: calc(110vh - 75px);
+        height: calc(160vh - 75px);
         display: flex;
         justify-content: space-between;
         align-content: space-around;
         flex-wrap: wrap;
         overflow-x: hidden;
         flex-direction: row;
+        overflow-y: hidden;
         
     }
     .title{
         font-size: xxx-large;
         text-shadow: -3px 1px #0000007a;
         text-align: center;
+        position: relative;
     }
     .longText{
-        padding: 10px;
         margin: auto;
         text-align: center;
+        width: 380px;
     }
+
     .imag{
         width:300px;
         margin: auto;  

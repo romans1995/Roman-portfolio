@@ -1,11 +1,14 @@
 .width {
-  height: calc(40vh - 75px);
+  height: calc(100vh - 75px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 0;
+  bottom: 5px;
 }
 .center {
   position: relative;
-  padding: 10px;
-  margin-top: 13%;
-  margin-left: 20%;
 }
 .title {
   font-size: xxx-large;
@@ -16,10 +19,11 @@
 }
 .icons {
   box-sizing: inherit;
-  margin: auto;
-  right: 922px;
+  display: flex;
+  justify-content: right;
   position: absolute;
-  top: 500px;
+  right: 0;
+  bottom: 5px;
 }
 @media only screen and (max-width: 1200px) {
   .width {
@@ -27,23 +31,24 @@
   }
   .icons {
     box-sizing: inherit;
-    margin: auto;
-    right: 422px;
+    display: flex;
+    justify-content: right;
     position: absolute;
-    top: 420px;
-  }
-  
+    right: 0;
+    bottom: 5px;
+  } 
 }
-@media only screen and (max-width:640px) {
+@media only screen and (max-width: 640px) {
   .width {
-    height: calc(100vh - 75px);
-    overflow-x: hidden;
+    /* height: calc(100vh - 75px);
+    overflow-x: hidden; */
   }
   .icons {
     box-sizing: inherit;
-    margin: auto;
-    right: 37%;
+    display: flex;
     position: absolute;
-    top: 83%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  
   }
 }

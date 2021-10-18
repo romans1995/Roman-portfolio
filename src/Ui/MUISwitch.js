@@ -10,6 +10,11 @@ const SwitchRoot = styled('span')(`
   width: 62px;
   height: 34px;
   padding: 7px;
+  @media (max-width: 360px) {
+      position:relative;
+      right: 121px;
+    }
+
 `);
 
 const SwitchInput = styled('input')(`
@@ -69,6 +74,7 @@ const SwitchTrack = styled('span')(
   width: 100%;
   height: 100%;
   display: block;
+
 `,
 );
 
@@ -79,6 +85,9 @@ function MUISwitch(props) {
     checked,
     disabled,
     focusVisible,
+    
+    
+    
   };
 
   return (

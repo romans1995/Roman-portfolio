@@ -1,9 +1,39 @@
-.imgprof{
-    border-radius: 50%;
+.imgprof {
+  border-radius: 50%;
 }
 
 .toolbar-dark {
-    background-color: #1c313a;
-    color:white;
+  background-color: #1c313a;
+  color: white;
 }
 
+.showToggle {
+  visibility: hidden;
+}
+@media only screen and (max-width: 1200px) {
+  .showToggle {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .showToggle {
+    visibility: visible;
+    right: 150px;
+  }
+}
+
+.simpleBtn {
+  visibility: visible;
+}
+@media only screen and (max-width: 1200px) {
+  .simpleBtn {
+    visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .simpleBtn {
+    visibility: hidden;
+  }
+}

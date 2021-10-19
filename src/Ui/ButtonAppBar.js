@@ -42,7 +42,7 @@ export default function ButtonAppBar(props) {
   };
   // const  {path,url} =useRouteMatch()
   return (
-    <AppBar position="static">
+    <AppBar>
       <Toolbar
         className={props.theme === "dark" ? classes["toolbar-dark"] : ""}
       >

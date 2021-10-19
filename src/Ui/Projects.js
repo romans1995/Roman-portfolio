@@ -15,6 +15,7 @@ import mp3 from "../Img/mp3.jpeg";
 import wordpress from "../Img/wordpress.jpeg";
 import med from "../Img/med.jpeg";
 import Meals from "../Img/Meals.jpeg";
+import { height } from "@mui/system";
 const Proj = [
   {
     id: 1,
@@ -77,15 +78,17 @@ const ProjLoop = (props) => {
   console.log(props.theme);
   let colorTheme = props.theme === "dark" ? "black" : "white";
   let colorText = props.theme === "dark" ? "white" : "black";
+  let boxBottom = props.theme === "dark" ? "1px solid #4A4A46" : " 1px solid #EAEAEA;";
   return (
     <>
       {Proj.map(({ id, Name, text, image, url }) => (
         <Card
           key={id}
-          sx={{ width: 450, background: colorTheme, margin: "10px" }}
+          sx={{ width: 450, background: colorTheme, margin: "10px"}}
+          height="180"
         >
           <CardActionArea>
-            <CardMedia component="img" height="140" image={image} alt={Name} />
+            <CardMedia component="img" height="140" image={image} alt={Name} style={{borderBottom: boxBottom}} />
             <CardContent color={colorText}>
               <Typography gutterBottom variant="h5" component="div">
                 {Name}
@@ -108,7 +111,7 @@ const ProjLoop = (props) => {
 const Projects = (props) => {
   return (
     <div className={classes.projwidth1}>
-      <h1 className={classes.projtitle} id="projects">My Projects</h1>
+      {/* <h1 className={classes.projtitle} id="projects">My Projects</h1> */}
       <div className={classes.projwidth}>
         <ProjLoop theme={props.theme} />
       </div>

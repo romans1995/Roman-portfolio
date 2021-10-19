@@ -26,7 +26,6 @@ const Footer = (props) => {
     `;
   return (
     <Container className={classes.footerwidth}>
-      <div>
       <TitleName className={classes.footertitle} id ="contact">
         Roman Stavinsky
       </TitleName>
@@ -52,7 +51,6 @@ const Footer = (props) => {
           <AttachmentIcon />
         </Link>
         </Tooltip>
-      </div>
       </div>
     </Container>
   );

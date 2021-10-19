@@ -1,8 +1,10 @@
 .footerwidth {
   width: 100%;
-  height: calc(22vh - 75px);
-  position: absolute;
-  margin-top: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 0;
+  /* margin-top: 100%; */
 }
 
 .footertitle {

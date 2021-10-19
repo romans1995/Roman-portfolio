@@ -28,9 +28,10 @@
   }
   .footerwidth {
     width: 100%;
-    height: calc(40vh - 75px);
-    position: absolute;
-    margin-top: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
   }
 }
 @media only screen and (max-width: 640px) {

@@ -1,6 +1,6 @@
 .aboutwidth {
     width: 100%;
-    height: calc(100vh - 75px);
+    height: 100vh;
     display: flex;
     align-items: stretch;
     flex-direction: column;
@@ -13,7 +13,7 @@
     width: 100vh;
   }
   .imag {
-    width: 600px;
+    max-height: 90vh;
     border-radius: 300px;
   }
   .title {

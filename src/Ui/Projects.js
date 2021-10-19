@@ -15,7 +15,6 @@ import mp3 from "../Img/mp3.jpeg";
 import wordpress from "../Img/wordpress.jpeg";
 import med from "../Img/med.jpeg";
 import Meals from "../Img/Meals.jpeg";
-import { height } from "@mui/system";
 const Proj = [
   {
     id: 1,
@@ -110,7 +109,7 @@ const ProjLoop = (props) => {
 };
 const Projects = (props) => {
   return (
-    <div className={classes.projwidth1}>
+    <div className={classes.projwidth1}  id="projects">
       {/* <h1 className={classes.projtitle} id="projects">My Projects</h1> */}
       <div className={classes.projwidth}>
         <ProjLoop theme={props.theme} />

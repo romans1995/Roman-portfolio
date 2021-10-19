@@ -11,7 +11,7 @@ import AttachmentIcon from "@mui/icons-material/Attachment";
 import cv from "./cv.png";
 
 const Footer = (props) => {
-  const themeP = props.theme === "dark" ? "black" : "white";
+  const themeP = props.theme === "dark" ? "black" : "#ebebeb";
   const Container = styled("div")`
     background-color: ${themeP};
   `;

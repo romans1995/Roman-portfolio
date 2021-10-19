@@ -53,8 +53,10 @@
     box-sizing: inherit;
     display: flex;
     position: absolute;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    margin-bottom: -30px;
   
   }
 }

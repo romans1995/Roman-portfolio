@@ -14,6 +14,10 @@ const SwitchRoot = styled('span')(`
       position:relative;
       right: 80px;
     }
+    @media (max-width: 320px) {
+      position:relative;
+      right: 150px;
+    }
 
 `);
 

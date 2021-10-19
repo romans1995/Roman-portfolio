@@ -89,9 +89,9 @@ export default function ButtonAppBar(props) {
           onClose={handleClose}
           TransitionComponent={Fade}
         >
-          <MenuItem onClick={handleClose}>About</MenuItem>
-          <MenuItem onClick={handleClose} href="#projects">Projects</MenuItem>
-          <MenuItem onClick={handleClose}>Contacts</MenuItem>
+          <Link color="inherit" underline="none"  href='/#about'><MenuItem onClick={handleClose}>About</MenuItem></Link>
+          <Link color="inherit" underline="none"  href='/#projects'><MenuItem onClick={handleClose} href="#projects">Projects</MenuItem></Link>
+          <Link color="inherit" underline="none"  href='/#contact'><MenuItem onClick={handleClose}>Contacts</MenuItem></Link>
         </Menu>
         <ToolbarButton
           id="darkTheme"

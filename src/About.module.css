@@ -1,34 +1,4 @@
 .aboutwidth {
-  width: 100%;
-  height: calc(100vh - 75px);
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
-  justify-content: center;
-  align-content: space-between;
-  flex-wrap: wrap;
-}
-.longText {
-  margin: auto;
-  width: 100vh;
-}
-.imag {
-  width: 600px;
-  border-radius: 300px;
-}
-.title {
-  font-size: xxx-large;
-  text-shadow: -3px 1px #0000007a;
-}
-.secondflex {
-  display: flex;
-  flex-direction: column;
-}
-@media only screen and (max-width: 1200px) {
-  .imag {
-    width: 300px;
-  }
-  .aboutwidth {
     width: 100%;
     height: calc(100vh - 75px);
     display: flex;
@@ -37,37 +7,67 @@
     justify-content: center;
     align-content: space-between;
     flex-wrap: wrap;
-    overflow-x: hidden;
   }
-}
-
-@media only screen and (max-width: 640px) {
-  .aboutwidth {
-    width: 100%;
-    height: calc(160vh - 75px);
-    display: flex;
-    justify-content: space-between;
-    align-content: space-around;
-    flex-wrap: wrap;
-    overflow-x: hidden;
-    flex-direction: row;
-    overflow-y: hidden;
-    overflow-x: hidden;
+  .longText {
+    margin: auto;
+    width: 100vh;
+  }
+  .imag {
+    width: 600px;
+    border-radius: 300px;
   }
   .title {
     font-size: xxx-large;
     text-shadow: -3px 1px #0000007a;
-    text-align: center;
-    position: relative;
   }
-  .longText {
-    margin: auto;
-    text-align: center;
-    width: 380px;
+  .secondflex {
+    display: flex;
+    flex-direction: column;
   }
-
-  .imag {
-    width: 300px;
-    margin: auto;
+  @media only screen and (max-width: 1200px) {
+    .imag {
+      width: 300px;
+    }
+    .aboutwidth {
+      width: 100%;
+      height: calc(100vh - 75px);
+      display: flex;
+      align-items: stretch;
+      flex-direction: column;
+      justify-content: center;
+      align-content: space-between;
+      flex-wrap: wrap;
+      overflow-x: hidden;
+    }
   }
-}
+  
+  @media only screen and (max-width: 640px) {
+    .aboutwidth {
+      width: 100%;
+      height: calc(100vh - 75px);
+      display: flex;
+      justify-content: space-between;
+      align-content: space-around;
+      flex-wrap: wrap;
+      overflow-x: hidden;
+      flex-direction: row;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+    .title {
+      font-size: xxx-large;
+      text-shadow: -3px 1px #0000007a;
+      text-align: center;
+      position: relative;
+    }
+    .longText {
+      margin: auto;
+      text-align: center;
+      width: 380px;
+    }
+  
+    .imag {
+      width: 300px;
+      margin: auto;
+    }
+  }

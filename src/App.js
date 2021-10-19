@@ -7,6 +7,7 @@ import About from "./About";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Projects from "./Ui/Projects";
 import Footer from "./Footer";
+import classes from './App.css';
 
 function App() {
   const [theme, setTheme] = useState(true);
@@ -27,14 +28,12 @@ function App() {
         </header>
         <main>
           <Main theme={appliedTheme.palette.type} />
-          <About />
+          <About theme={appliedTheme.palette.type} />
           <Projects theme={appliedTheme.palette.type} />
         </main>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+        <footer className={classes.footercl}>
           <Footer theme={appliedTheme.palette.type}/>
+          </footer>
       </div>
     </ThemeProvider>
   );

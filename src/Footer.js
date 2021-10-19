@@ -11,11 +11,11 @@ import AttachmentIcon from "@mui/icons-material/Attachment";
 import cv from "./cv.png";
 
 const Footer = (props) => {
-  const themeP = props.theme === "dark" ? "white" : "black";
+  const themeP = props.theme === "dark" ? "black" : "white";
   const Container = styled("div")`
     background-color: ${themeP};
   `;
-  const themeB = props.theme === "dark" ? "black" : "white";
+  const themeB = props.theme === "dark" ? "white" : "black";
   const TitleName = styled("h1")`
     color: ${themeB};
   `;
@@ -23,11 +23,11 @@ const Footer = (props) => {
       color: ${themeB};
       text-align: center;
     position: relative;
-    margin-bottom: -100px;
     `;
   return (
     <Container className={classes.footerwidth}>
-      <TitleName className={classes.footertitle}>
+      <div>
+      <TitleName className={classes.footertitle} id ="contact">
         Roman Stavinsky
       </TitleName>
       <TitleEmail className={classes.footerEmail}>
@@ -52,6 +52,7 @@ const Footer = (props) => {
           <AttachmentIcon />
         </Link>
         </Tooltip>
+      </div>
       </div>
     </Container>
   );

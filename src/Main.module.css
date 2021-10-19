@@ -6,6 +6,8 @@
   position: relative;
   right: 0;
   bottom: 5px;
+  overflow-y: hidden;
+
 }
 .center {
   position: relative;
@@ -27,7 +29,9 @@
 }
 @media only screen and (max-width: 1200px) {
   .width {
-    height: calc(70vh - 75px);
+    height: calc(100vh - 75px);
+    overflow-y: hidden;
+
   }
   .icons {
     box-sizing: inherit;
@@ -42,6 +46,8 @@
   .width {
     /* height: calc(100vh - 75px);
     overflow-x: hidden; */
+    overflow-x:hidden;
+
   }
   .icons {
     box-sizing: inherit;

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { BrowserRouter,Route } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -12,6 +13,8 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Fade from "@mui/material/Fade";
 import MenuIcon from "@mui/icons-material/Menu";
+import Link from "@mui/material/Link";
+
 
 const ToolbarButton = styled(Button)`
   font-weight: bold;
@@ -37,6 +40,7 @@ export default function ButtonAppBar(props) {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  // const  {path,url} =useRouteMatch()
   return (
     <AppBar position="static">
       <Toolbar
@@ -50,15 +54,19 @@ export default function ButtonAppBar(props) {
           component="div"
           sx={{ flexGrow: 1 }}
         ></Typography>
-        <ToolbarButton className={classes.simpleBtn} color="inherit">
-          About
+        <BrowserRouter>
+        <Link color="inherit" underline="none"  href='/#about'><ToolbarButton className={classes.simpleBtn} to={`/#about`} color="inherit">
+        About
         </ToolbarButton>
-        <ToolbarButton className={classes.simpleBtn} color="inherit">
+        </Link>
+        <Link color="inherit" underline="none"  href='/#projects'><ToolbarButton className={classes.simpleBtn} color="inherit">
           Projects
         </ToolbarButton>
-        <ToolbarButton className={classes.simpleBtn} color="inherit">
+        </Link>
+        <Link color="inherit" underline="none"  href='/#contact'><ToolbarButton className={classes.simpleBtn} color="inherit">
           Contacts
         </ToolbarButton>
+        </Link>
         <IconButton
           className={classes.showToggle}
           id="fade-button"
@@ -82,7 +90,7 @@ export default function ButtonAppBar(props) {
           TransitionComponent={Fade}
         >
           <MenuItem onClick={handleClose}>About</MenuItem>
-          <MenuItem onClick={handleClose}>Projects</MenuItem>
+          <MenuItem onClick={handleClose} href="#projects">Projects</MenuItem>
           <MenuItem onClick={handleClose}>Contacts</MenuItem>
         </Menu>
         <ToolbarButton
@@ -92,6 +100,7 @@ export default function ButtonAppBar(props) {
         >
           <MuiSwitch className={classes.Muimobile}/>
         </ToolbarButton>
+        </BrowserRouter>
       </Toolbar>
     </AppBar>
   );

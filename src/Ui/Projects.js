@@ -19,7 +19,7 @@ const Proj = [
   {
     id: 1,
     Name: "ToDoList",
-    text: "Here you can add tasks and save them to API,Builed with JS",
+    text: "Here you can add tasks and save them to API,built with JS",
     image: firstP,
     url: "https://romans1995.github.io/kanban-final/solution/",
   },
@@ -34,21 +34,21 @@ const Proj = [
     id: 3,
     Name: "VegeGo",
     image: vegee,
-    text: "a vegetrain forum ,builed with php",
+    text: "a vegetarian forum ,built with php",
     url: "https://github.com/romans1995/VegeGo",
   },
   {
     id: 4,
     Name: "python Pong game",
     image: python,
-    text: "This is a pong game that builed with python",
+    text: "This is a pong game that built with python",
     url: "https://github.com/romans1995/python",
   },
   {
     id: 5,
     Name: "mp3",
     image: mp3,
-    text: "Demo mp3 website builed with JS",
+    text: "Demo mp3 website built with JS",
     url: "https://romans1995.github.io/MP3-DOM/",
   },
   {
@@ -63,13 +63,13 @@ const Proj = [
     Name: "Stav Barbi professional Business page",
     image: med,
     url: "https://www.stavbarbi.com/",
-    text: "A profissonal Bussnes web ,that I builed with wix",
+    text: "A profissonal Bussnes web ,that I built with wix",
   },
   {
     id: 8,
     Name: "Food Order website",
     image: Meals,
-    text: "Food order web that you can chose and add to cart meals,Builed with REACT",
+    text: "Food order web that you can chose and add to cart meals,built with REACT",
     url: "https://github.com/romans1995/VeganFood",
   },
 ];
@@ -108,7 +108,7 @@ const ProjLoop = (props) => {
 const Projects = (props) => {
   return (
     <div className={classes.projwidth1}>
-      <h1 className={classes.projtitle}>My Projects</h1>
+      <h1 className={classes.projtitle} id="projects">My Projects</h1>
       <div className={classes.projwidth}>
         <ProjLoop theme={props.theme} />
       </div>

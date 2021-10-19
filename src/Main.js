@@ -1,10 +1,14 @@
-import React from "react";
+
 import StyledBtn from "./Ui/StyledBtn";
 import classes from "./Main.module.css";
 import Bg1 from "./Lay2.png";
 import styled from "@emotion/styled";
 import Link from "@mui/material/Link";
 import Tooltip from "@mui/material/Tooltip";
+
+
+
+
 // Icons
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -14,8 +18,9 @@ import cv from "./cv.png";
 const Main = (props) => {
   const BackImage = styled("img")`
     width: 300px;
-    max-height: 321px;
+    max-height: 421px;
     z-index: -1;
+    left:40px;
     position: absolute;
   `;
   return (
@@ -45,9 +50,10 @@ const Main = (props) => {
             </Link>
           </Tooltip>
         </div>
-        <StyledBtn variant="contained" src="#">
+        <Link href="/#about"><StyledBtn variant="contained" href="./#about">
           About me
         </StyledBtn>
+        </Link>
       </div>
     </div>
   );

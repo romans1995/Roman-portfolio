@@ -1,8 +1,8 @@
 .footerwidth {
-  background-color: white;
   width: 100%;
-  height: calc(20vh - 75px);
+  height: calc(22vh - 75px);
   position: absolute;
+  margin-top: 100%;
 }
 
 .footertitle {
@@ -14,42 +14,34 @@
 .footericons {
   box-sizing: inherit;
   margin: auto;
-  right: 730px;
-  position: absolute;
-  top: 65px;
+  position: relative;
+  margin-top: 10px;
 }
 @media only screen and (max-width: 1400px) {
   .footericons {
     box-sizing: inherit;
     margin: auto;
-    right: 430px;
-    position: absolute;
-    top: 66px;
+    position: relative;
+    margin-top: 10px;
   }
   .footerwidth {
-    background-color: white;
     width: 100%;
-    height: calc(30vh - 75px);
+    height: calc(40vh - 75px);
     position: absolute;
     margin-top: 100%;
   }
 }
 @media only screen and (max-width: 640px) {
-  .footerwidth{
-    background-color: white;
+  .footerwidth {
     height: calc(35vh - 75px);
     position: absolute;
+    max-width: 100%;
     overflow-x: hidden;
-    max-width:100%;
-  
   }
+
   .footericons {
     box-sizing: inherit;
     margin: auto;
-    right: 150px;
-    position: absolute;
-    top: 60px;
+    position: relative;
   }
-
-
 }

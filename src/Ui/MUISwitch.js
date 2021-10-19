@@ -10,9 +10,9 @@ const SwitchRoot = styled('span')(`
   width: 62px;
   height: 34px;
   padding: 7px;
-  @media (max-width: 360px) {
+  @media (max-width: 460px) {
       position:relative;
-      right: 121px;
+      right: 80px;
     }
 
 `);

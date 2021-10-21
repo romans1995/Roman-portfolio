@@ -13,12 +13,6 @@ import whiteGit from "../Img/git1.png";
 
     
 export default class GitFetch extends React.Component {
-  boxBottom(props){
-      return  props.theme === "dark" ? "1px solid #4A4A46" : " 1px solid #EAEAEA;";
-    }
-    colorTheme(props){
-      return  console.log(props.theme);
-    }
   state = {
     loading: true,
     repo: null

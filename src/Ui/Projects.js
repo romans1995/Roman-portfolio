@@ -89,8 +89,8 @@ const ProjLoop = (props) => {
         >
           <CardActionArea>
             <CardMedia component="img" height="140" image={image} alt={Name} style={{borderBottom: boxBottom}} />
-            <CardContent color={colorText}>
-              <Typography gutterBottom variant="h5" component="div">
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div" color={colorText}>
                 {Name}
               </Typography>
               <Typography variant="body2" color={colorText}>

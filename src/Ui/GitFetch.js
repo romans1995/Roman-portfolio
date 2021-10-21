@@ -7,14 +7,6 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 
 // IMages 
-import firstP from "../Img/todolist.jpeg";
-import sntimntor from "../Img/simp.jpeg";
-import vegee from "../Img/vege.jpeg";
-import python from "../Img/python.jpeg";
-import mp3 from "../Img/mp3.jpeg";
-import wordpress from "../Img/wordpress.jpeg";
-import med from "../Img/med.jpeg";
-import Meals from "../Img/Meals.jpeg";
 import blackGit from "../Img/git.png";
 import whiteGit from "../Img/git1.png";
 
@@ -27,8 +19,6 @@ export default class GitFetch extends React.Component {
     colorTheme(props){
       return  console.log(props.theme);
     }
-
-  
   state = {
     loading: true,
     repo: null

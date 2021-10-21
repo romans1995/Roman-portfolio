@@ -39,7 +39,7 @@
     height: calc(35vh - 75px);
     position: absolute;
     max-width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
   .footericons {

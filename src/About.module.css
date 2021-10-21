@@ -62,7 +62,7 @@
       flex-wrap: wrap;
       flex-direction: row;
       overflow-y: hidden;
-      overflow-x: hidden;
+      /* overflow-x: hidden; */
     }
     .title {
       font-size: xxx-large;

@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
+import GitFetch from "./GitFetch";
 
 // imges
 import firstP from "../Img/todolist.jpeg";
@@ -15,6 +16,7 @@ import mp3 from "../Img/mp3.jpeg";
 import wordpress from "../Img/wordpress.jpeg";
 import med from "../Img/med.jpeg";
 import Meals from "../Img/Meals.jpeg";
+
 const Proj = [
   {
     id: 1,
@@ -74,7 +76,6 @@ const Proj = [
   },
 ];
 const ProjLoop = (props) => {
-  console.log(props.theme);
   let colorTheme = props.theme === "dark" ? "black" : "white";
   let colorText = props.theme === "dark" ? "white" : "black";
   let boxBottom = props.theme === "dark" ? "1px solid #4A4A46" : " 1px solid #EAEAEA;";
@@ -110,9 +111,11 @@ const ProjLoop = (props) => {
 const Projects = (props) => {
   return (
     <div className={classes.projwidth1}  id="projects">
+       {/* <GitFetch className="API"/> */}
       {/* <h1 className={classes.projtitle} id="projects">My Projects</h1> */}
       <div className={classes.projwidth}>
         <ProjLoop theme={props.theme} />
+        <GitFetch theme={props.theme} />
       </div>
     </div>
   );

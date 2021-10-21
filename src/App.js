@@ -30,11 +30,13 @@ function App() {
           <Main theme={appliedTheme.palette.type} />
           <About theme={appliedTheme.palette.type} />
           <Projects theme={appliedTheme.palette.type} />
+          
         </main>
         <footer className={classes.footercl}>
           <Footer theme={appliedTheme.palette.type}/>
           </footer>
       </div>
+     
     </ThemeProvider>
   );
 }

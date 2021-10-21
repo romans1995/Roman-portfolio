@@ -42,9 +42,10 @@ export default function ButtonAppBar(props) {
   };
   // const  {path,url} =useRouteMatch()
   return (
-    <AppBar>
+    <AppBar position="sticky">
       <Toolbar
         className={props.theme === "dark" ? classes["toolbar-dark"] : ""}
+        position="sticky !important" 
       >
         <IconButton size="large" edge="start" aria-label="menu" sx={{ mr: 2 }}>
           <ProfileImage src={profImg} className={classes.imgprof} alt="Logo" />

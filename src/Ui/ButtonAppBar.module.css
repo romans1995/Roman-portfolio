@@ -3,8 +3,7 @@
 }
 
 .toolbar-dark {
-  position:"sticky";
-   top:"0";
+  position:sticky !important;
   background-color: #1c313a;
   color: white;
 }

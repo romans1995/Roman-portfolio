@@ -18,8 +18,8 @@ const About = (props) => {
         <h4 className={classes.longText}>
           Hey there I'm Roman Stavisnky<br></br>I started learning basic HTML
           when I was 10 years old,<br></br>but not for study purposes just only
-          to have fun. And my code journey begins only when I becoming 24 years
-          old.<br></br>I went to study coding at HackerU.<br></br> HackerU is a
+          to have fun. And my code journey begins only when I became 24 years
+          old.<br></br>I went to a Full-Stack development course in HackerU in order to learn how to code.<br></br> HackerU is a
           world-renowned provider of technology education, cybersecurity
           services, and high-caliber knowledge transfer.<br></br> After I
           graduated I worked as WordPress developer and freelancer <br></br> I'm

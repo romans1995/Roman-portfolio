@@ -11,8 +11,8 @@ const SwitchRoot = styled('span')(`
   height: 34px;
   padding: 7px;
   @media (max-width: 460px) {
-      position:relative;
-      right: 80px;
+      /* position:relative;
+      right: 80px; */
     }
     @media (max-width: 320px) {
       position:relative;

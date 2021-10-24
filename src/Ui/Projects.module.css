@@ -1,11 +1,11 @@
 .projwidth {
   width: 100%;
-  height: calc(100vh - 75px);
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 1px 6px 1px rgb(200 200 200 / 30%);
+  
   overflow-y: auto;
   
 }
@@ -29,7 +29,7 @@
 @media only screen and (max-width: 1400px) {
   .projwidth1 {
     width: 100%;
-    height: calc(100vh);
+    height: 100vh;
     display: flex;
     flex-direction: column;
   }

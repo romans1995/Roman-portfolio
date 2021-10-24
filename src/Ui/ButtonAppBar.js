@@ -42,7 +42,7 @@ export default function ButtonAppBar(props) {
   };
   // const  {path,url} =useRouteMatch()
   return (
-    <AppBar position="fixed">
+    <AppBar position="sticky" >
       <Toolbar
         className={props.theme === "dark" ? classes["toolbar-dark"] : ""}
         position="sticky !important" 
@@ -75,7 +75,8 @@ export default function ButtonAppBar(props) {
           aria-haspopup="true"
           aria-expanded={open ? "true" : undefined}
           onClick={handleClick}
-          sx={{ mr: 2 }}
+          sx={{ mr: 2,color:'#AAAAAA' }}
+          
         >
           <MenuIcon className={classes.Muimobile} />
         </IconButton>

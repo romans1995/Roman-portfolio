@@ -1,6 +1,6 @@
 .aboutwidth {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     /* flex-direction: column; */
@@ -39,7 +39,7 @@
       position: relative;
     }
     .imag {
-      max-height: 90vh;
+      max-height: 70vh;
       border-radius: 300px;
     }
     .title {

@@ -68,19 +68,6 @@ export default function ButtonAppBar(props) {
           Contacts
         </ToolbarButton>
         </Link>
-        <IconButton
-          className={classes.showToggle}
-          id="fade-button"
-          aria-controls="fade-menu"
-          aria-haspopup="true"
-          aria-expanded={open ? "true" : undefined}
-          onClick={handleClick}
-          sx={{ mr: 2,color:'#AAAAAA' }}
-          
-        >
-          <MenuIcon className={classes.Muimobile} />
-        </IconButton>
-
         <Menu
           id="fade-menu"
           MenuListProps={{

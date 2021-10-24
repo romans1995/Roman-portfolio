@@ -21,7 +21,7 @@
 @media only screen and (max-width: 640px) {
   .showToggle {
     visibility: visible;
-    position: absolute;
+    
   }
 }
 
@@ -36,6 +36,6 @@
 
 @media only screen and (max-width: 640px) {
   .simpleBtn {
-    visibility: hidden;
+    visibility: visible;
   }
 }

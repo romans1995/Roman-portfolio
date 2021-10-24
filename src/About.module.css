@@ -35,7 +35,6 @@
     }
     .longText {
       margin: auto;
-      width: 54vh;
       position: relative;
     }
     .imag {
@@ -73,7 +72,6 @@
     .longText {
       margin: auto;
       text-align: center;
-      width: 380px;
     }
   
     .imag {

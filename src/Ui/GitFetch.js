@@ -26,7 +26,7 @@ export default class GitFetch extends React.Component {
   }
 
   render() {
-    const colorTheme = this.props.theme === "dark" ? "black" : "white";
+    const colorTheme = this.props.theme === "dark" ? "#112534" : "white";
     const colorThemetext = this.props.theme === "dark" ? "white" : "black";
     const boxBottom = this.props.theme === "dark" ? "1px solid #4A4A46" : " 1px solid #EAEAEA;";
     const colorGit = this.props.theme === "dark" ? whiteGit:blackGit;

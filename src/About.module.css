@@ -12,6 +12,7 @@
     width: 100%;
   }
   .imag {
+    font-family: math;
     max-height: 90vh;
     border-radius: 300px;
   }
@@ -22,6 +23,11 @@
   .secondflex {
     display: flex;
     flex-direction: column;
+  }
+  p{
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: ui-serif;
   }
   @media only screen and (max-width: 1200px) {
     .aboutwidth {

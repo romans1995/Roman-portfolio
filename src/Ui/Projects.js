@@ -76,7 +76,7 @@ const Proj = [
   },
 ];
 const ProjLoop = (props) => {
-  let colorTheme = props.theme === "dark" ? "black" : "white";
+  let colorTheme = props.theme === "dark" ? "#112534" : "white";
   let colorText = props.theme === "dark" ? "white" : "black";
   let boxBottom = props.theme === "dark" ? "1px solid #4A4A46" : " 1px solid #EAEAEA;";
   return (

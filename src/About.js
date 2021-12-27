@@ -15,17 +15,24 @@ const About = (props) => {
       <img className={classes.imag} src={profImg} alt="Roman" />
       <div className={classes.secondflex}>
         <h1 className={classes.title} id ="about" >About</h1>
-        <h4 className={classes.longText}>
-          Hey there I'm Roman Stavisnky<br></br>I started learning basic HTML
-          when I was 10 years old,<br></br>but not for study purposes just only
-          to have fun. And my code journey begins only when I became 24 years
-          old.<br></br>I went to a Full-Stack development course in HackerU in order to learn how to code.<br></br> HackerU is a
+        <p className={classes.longText}>
+          <p>Hey there I'm Roman Stavisnky.</p>
+          <p>I started learning basic HTML
+          when I was 10 years old,but not for study purposes just only
+          to have fun.</p>
+          <p> And my code journey begins only when I became 24 years
+          old.</p>
+          <p>I went to a Full-Stack development course in HackerU in order to learn how to code.</p>
+          <p>HackerU is a
           world-renowned provider of technology education, cybersecurity
-          services, and high-caliber knowledge transfer.<br></br> After I
-          graduated I worked as WordPress developer and freelancer <br></br> I'm
+          services, and high-caliber knowledge transfer.</p>
+          <p>After I
+          graduated I worked as WordPress developer and freelancer </p>
+          <p> I'm
           very motivated to learn new things and open for new opportunities
-          right now I'm working as freelancer and searching for a new challenge
-        </h4>
+          right now I'm working as freelancer and searching for a new challenge</p>
+            
+        </p>
       </div>
     </Container>
   );

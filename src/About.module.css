@@ -58,6 +58,11 @@
   }
   
   @media only screen and (max-width: 640px) {
+    p{
+      font-weight: lighter;
+      font-size: 12px;
+      font-family: ui-serif;
+    }
     .aboutwidth {
       width: 100%;
       height: calc(143vh);

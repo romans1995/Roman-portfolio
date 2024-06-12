@@ -1,65 +1,81 @@
 .width {
-  height: calc(100vh - 75px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  right: 0;
-  bottom: 5px;
-  overflow-y: hidden;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
 .center {
-  position: relative;
+    position: absolute;
+    top: 0;
+    color: white;
+    padding: 0px;
 }
-.title {
-  font-size: xxx-large;
-  text-shadow: -3px 1px #0000007a;
-}
-.secondaryTxt {
-  font-size: x-large;
-}
-.icons {
-  box-sizing: inherit;
-  display: flex;
-  justify-content: right;
-  position: absolute;
-  right: 0;
-  bottom: 5px;
-}
-h3{
-  font-family: ui-serif;
-}
-@media only screen and (max-width: 1200px) {
-  .width {
-    height: calc(100vh - 75px);
-    overflow-y: hidden;
 
-  }
-  .icons {
+.title {
+    font-size: xxx-large;
+    text-shadow: -3px 1px #0000007a;
+}
+
+.secondaryTxt {
+    font-size: x-large;
+}
+
+.icons {
     box-sizing: inherit;
     display: flex;
     justify-content: right;
     position: absolute;
     right: 0;
     bottom: 5px;
-  } 
 }
-@media only screen and (max-width: 640px) {
-  .width {
-    /* height: calc(100vh - 75px);
-    overflow-x: hidden; */
-    overflow-x:hidden;
 
-  }
-  .icons {
-    box-sizing: inherit;
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    margin-bottom: -30px;
-  
-  }
+h3 {
+    font-family: ui-serif;
+}
+
+.video {
+    object-fit: cover;
+    opacity: 0.09;
+    height: auto;
+}
+
+.art {
+    margin: 0;
+    position: relative;
+}
+
+@media only screen and (max-width: 1200px) {
+    .width {
+        height: 100%;
+    }
+    .icons {
+        box-sizing: inherit;
+        display: flex;
+        justify-content: right;
+        /* position: absolute; */
+        right: 0;
+        bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .width {
+        /* bottom: 90px; */
+        overflow-x: hidden;
+    }
+    .icons {
+        box-sizing: inherit;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        margin-bottom: -30px;
+    }
+    .video {
+        min-height: 470px;
+    }
+    .center {
+        position: relative;
+    }
 }

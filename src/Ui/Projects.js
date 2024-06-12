@@ -8,6 +8,8 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 import GitFetch from "./GitFetch";
 
 // imges
+import newsP from "../Img/newsP.png";
+import aroundP from "../Img/aroundP.png";
 import firstP from "../Img/todolist.jpeg";
 import sntimntor from "../Img/simp.jpeg";
 import vegee from "../Img/vege.jpeg";
@@ -16,8 +18,30 @@ import mp3 from "../Img/mp3.jpeg";
 import wordpress from "../Img/wordpress.jpeg";
 import med from "../Img/med.jpeg";
 import Meals from "../Img/Meals.jpeg";
+import Cinnabons from "../Img/cinnabonimImg1.webp";
 
 const Proj = [
+  {
+    id: 11,
+    Name: "Cinnabonim",
+    text: "an Ecommerce website for local Business ",
+    image: Cinnabons,
+    url: "https://cinnabonim.com/",
+  },
+  {
+    id: 10,
+    Name: "news explorer",
+    text: "Introducing NewsExplorer, your go-to website for personalized news exploration. Powered by Azure VM, MongoDB, and React, discover, save, and explore news topics that interest you. Join now for a tailored news journey!",
+    image: newsP,
+    url: "https://newsexplorer-r.chickenkiller.com/",
+  },
+  {
+    id: 9,
+    Name: "Around react",
+    text: " Around React, a dynamic social media platform reminiscent of Instagram. where users can engage by liking and disliking photos, while also enjoying features such as login and registration. The platform also offers the ability to personalize your profile, including uploading profile pictures and editing user details",
+    image: aroundP,
+    url: "https://around-r.chickenkiller.com/around-react",
+  },
   {
     id: 1,
     Name: "ToDoList",

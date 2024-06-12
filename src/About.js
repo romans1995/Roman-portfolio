@@ -16,21 +16,12 @@ const About = (props) => {
       <div className={classes.secondflex}>
         <h1 className={classes.title} id ="about" >About</h1>
         <p className={classes.longText}>
-          <p>Hey there I'm Roman Stavisnky.</p>
-          <p>I started learning basic HTML
-          when I was 10 years old,but not for study purposes just only
-          to have fun.</p>
-          <p> And my code journey begins only when I became 24 years
-          old.</p>
-          <p>I went to a Full-Stack development course in HackerU in order to learn how to code.</p>
-          <p>HackerU is a
-          world-renowned provider of technology education, cybersecurity
-          services, and high-caliber knowledge transfer.</p>
-          <p>After I
-          graduated I worked as WordPress developer and freelancer </p>
-          <p> I'm
-          very motivated to learn new things and open for new opportunities
-          right now I'm working as freelancer and searching for a new challenge</p>
+          <p>Hey there I'm Roman Stavinsky.</p>
+          <p>I started learning basic HTML when I was 10 years old, just for fun. Little did I know that it would ignite my passion for coding.</p>
+          <p> Fast forward to today, and I have gained extensive experience in Full-Stack development, with a focus on MongoDB and React.</p><p> I have successfully completed more than 10 projects utilizing these technologies. In fact, even this website you're currently visiting is built using React and hosted on the Google Cloud platform.</p>
+          <p>Additionally, I have worked for a year in a company where I developed landing pages from scratch, showcasing my ability to create visually appealing and functional web experiences. Furthermore, I had the opportunity to work in another company where I tackled numerous bugs in a Magento platform, using my expertise in PHP to provide efficient solutions.</p>
+          <p>I am highly motivated to continue learning and exploring new technologies. Currently, I am working as a freelancer, actively seeking new challenges and opportunities to apply my skills and contribute to exciting projects.</p>
+        
             
         </p>
       </div>

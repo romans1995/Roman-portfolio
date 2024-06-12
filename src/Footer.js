@@ -8,7 +8,7 @@ import Tooltip from '@mui/material/Tooltip';
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import AttachmentIcon from "@mui/icons-material/Attachment";
-import cv from "./cv.png";
+import cv from "./cv.pdf";
 
 const Footer = (props) => {
   const themeP = props.theme === "dark" ? "black" : "#ebebeb";

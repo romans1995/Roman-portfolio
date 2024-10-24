@@ -4,6 +4,7 @@ import { ThemeProvider } from "@material-ui/core";
 import { createTheme } from "@material-ui/core/styles";
 import Main from "./Main.js";
 import About from "./About";
+import Carousel from "./components/Carousel.js";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Projects from "./Ui/Projects";
 import Footer from "./Footer";
@@ -28,7 +29,8 @@ function App() {
         </header>
         <main>
           <Main theme={appliedTheme.palette.type} />
-          <About theme={appliedTheme.palette.type} />
+          {/* <About theme={appliedTheme.palette.type} /> */}
+          <Carousel theme={appliedTheme.palette.type} />
           <Projects theme={appliedTheme.palette.type} />
           
         </main>

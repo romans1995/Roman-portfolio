@@ -1,71 +1,76 @@
 .projwidth {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  font-family: ui-serif;
-  
-  overflow-y: auto;
-  
-}
-.projwidth1 {
-  width: 100%;
-  height: calc(100vh);
-  display: flex;
-  flex-direction: column;
-}
-
-.imag {
-  width: 600px;
-  border-radius: 300px;
-}
-.projtitle {
-  font-size: xxx-large;
-  text-shadow: -3px 1px #0000007a;
-  text-align: center;
-}
-
-@media only screen and (max-width: 1400px) {
-  .projwidth1 {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .projimag {
-    width: 300px;
-  }
-  .projwidth {
-    width: 100%;
-    height: calc(100vh - 75px);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 6px 1px rgb(200 200 200 / 30%);
-    overflow-y: auto;
-  }
+    align-items: flex-start;
+    font-family: ui-serif;
 }
-@media only screen and (max-width: 940px) {
-  .projimag {
-    width: 300px;
-  }
-  .projwidth1 {
+
+.projwidth1 {
     width: 100%;
-    height: calc(100vh);
     display: flex;
-    flex-direction: column;
-  }
-  .projwidth {
-    width: 100%;
-  height: calc(180vh - 75px);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 1px 1px 6px 1px rgb(200 200 200 / 30%);
-    
-  }
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 1px 1px 6px 1px rgb(200 200 200 / 30%);
+    align-items: flex-start;
+}
+
+.imag {
+    width: 600px;
+    border-radius: 300px;
+}
+
+.projtitle {
+    font-size: xxx-large;
+    text-shadow: -3px 1px #0000007a;
+    text-align: center;
+}
+
+.displayoff {
+    display: none;
+}
+
+.displayon {
+    display: block;
+}
+
+@media only screen and (max-width: 1400px) {
+    /* .projwidth1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    } */
+    .projimag {
+        width: 300px;
+    }
+    /* .projwidth {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 1px 6px 1px rgb(200 200 200 / 30%);
+    } */
+}
+
+@media only screen and (max-width: 940px) {
+    .projimag {
+        width: 300px;
+    }
+    /* .projwidth1 {
+        width: 100%;
+        height: calc(100vh);
+        display: flex;
+        flex-direction: column;
+    } */
+    /* .projwidth {
+        width: 100%;
+        height: calc(180vh - 75px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 1px 6px 1px rgb(200 200 200 / 30%);
+    } */
 }

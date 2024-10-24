@@ -1,38 +1,55 @@
-import React from "react";
+import React, { useEffect, useRef } from 'react';
 import profImg from "./Img/me.JPG";
 import classes from "./About.module.css";
 import styled from "@emotion/styled";
 
 
 const About = (props) => {
-    const themeP = props.theme === "dark" ? "#1c313a" : "#ebebeb";
+
     const Container = styled("div")`
-      background-color: ${themeP};
+      background-color: #ffffff00;
+    position: absolute;
+    top: 0%;
+    color: white;
+    padding: 0px;
     `;
+  // useEffect(() => {
+  //   const adjustVideoHeight = () => {
+  //     if (containerRef.current && videoRef.current) {
+  //       const contentHeight = containerRef.current.offsetHeight;
+  //       videoRef.current.style.height = `${contentHeight}px`;
+  //     }
+  //   };
+
+  //   adjustVideoHeight();
+  //   window.addEventListener('resize', adjustVideoHeight);
+
+  //   return () => {
+  //     window.removeEventListener('resize', adjustVideoHeight);
+  //   };
+  // }, []);
   
   return (
-    <Container id="about" className={classes.aboutwidth}>
+    <Container id="about" className={`${classes.aboutwidth} ${classes.fadeIn}`}>
       <img className={classes.imag} src={profImg} alt="Roman" />
       <div className={classes.secondflex}>
         <h1 className={classes.title} id ="about" >About</h1>
-        <p className={classes.longText}>
-          <p>Hey there I'm Roman Stavisnky.</p>
-          <p>I started learning basic HTML
-          when I was 10 years old,but not for study purposes just only
-          to have fun.</p>
-          <p> And my code journey begins only when I became 24 years
-          old.</p>
-          <p>I went to a Full-Stack development course in HackerU in order to learn how to code.</p>
-          <p>HackerU is a
-          world-renowned provider of technology education, cybersecurity
-          services, and high-caliber knowledge transfer.</p>
-          <p>After I
-          graduated I worked as WordPress developer and freelancer </p>
-          <p> I'm
-          very motivated to learn new things and open for new opportunities
-          right now I'm working as freelancer and searching for a new challenge</p>
-            
-        </p>
+        <p>Hello, I'm Roman Stavinsky.</p>
+
+        <p>My journey into the world of coding began at the age of 10, when I started experimenting with basic HTML for fun. What started as a hobby quickly evolved into a deep passion for programming.</p>
+
+        <p>Today, I am an experienced Full-Stack Developer with a strong focus on MongoDB and React. I have had the opportunity to work with three distinct companies that have shaped my career:</p>
+
+        <ul>
+          <li><strong>MXI</strong>: Here, I developed landing pages from scratch, showcasing my ability to create visually engaging and highly functional web experiences.</li>
+          <li><strong>Endlessroll</strong>: In this role, I tackled numerous bugs within a Magento platform, leveraging my expertise in PHP to provide efficient solutions and improve system performance.</li>
+          <li><strong>MeNow</strong>: This company provided me with the chance to work on diverse projects, further honing my skills in Full-Stack development and expanding my technical knowledge.</li>
+        </ul>
+
+        <p>The website you are currently visiting is built with React and hosted on Hostinger, demonstrating my commitment to leveraging cutting-edge technologies.</p>
+
+        <p>Driven by a continuous desire to learn and explore new advancements, I am currently working as a freelancer. I am always eager to take on new challenges and contribute to innovative projects.</p>
+
       </div>
     </Container>
   );

@@ -3,12 +3,12 @@ import classes from "./Footer.module.css";
 import styled from "@emotion/styled";
 import Link from "@mui/material/Link";
 import Tooltip from '@mui/material/Tooltip';
-
+import MenuIcon from '@mui/icons-material/Menu';
 // Icons
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import AttachmentIcon from "@mui/icons-material/Attachment";
-import cv from "./cv.png";
+import cv from "./cv.pdf";
 
 const Footer = (props) => {
   const themeP = props.theme === "dark" ? "black" : "#ebebeb";

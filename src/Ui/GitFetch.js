@@ -18,7 +18,7 @@ export default class GitFetch extends React.Component {
     repo: null
   };
 
-  async componentDidMount(props) {
+  async componentDidMount() {
     const url = "https://api.github.com/users/romans1995/repos";
     const response = await fetch(url);
     const data = await response.json();
@@ -37,13 +37,13 @@ export default class GitFetch extends React.Component {
     if (!this.state.repo) {
       return <div>didn't get a REPO</div>;
     }
-
+    console.log(this.props.showGitprojects, "showGitprojects")
     return (
      <>
       {this.state.repo.map(({ id, name, text,svn_url,has_pages,description}) => (
         <Card
           key={id}
-          sx={{ width: 450,background: colorTheme, margin: "10px"}}
+          sx={this.props.showGitprojects ? {display:"none"} :{ width: 450,background: colorTheme, margin: "10px"}}
           height="180"
         >
           <CardActionArea>

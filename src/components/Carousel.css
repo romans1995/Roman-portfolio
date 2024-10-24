@@ -1,0 +1,36 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    /* Adjust based on your image height */
+}
+
+.carousel-images {
+    display: flex;
+    width: calc(100% * 3);
+    /* Container width to fit all images three times */
+    height: auto;
+    /* Adjust based on your image height */
+    transition: transform 15s linear;
+    /* Smooth, continuous transition */
+    will-change: transform;
+    /* Improve performance */
+    align-items: center;
+}
+
+.carousel-images img {
+    padding: 0 10px;
+    width: 300px;
+    /* Ensure images fit container width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.carousel__title {
+    font-family: ui-serif;
+    text-align: center;
+    font-size: 32px;
+    margin: 0;
+    padding: 10px;
+}

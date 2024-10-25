@@ -6,6 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import profImg from "./r-LOGO.png";
 import lewWeb from "./../Img/lewweb.webp";
 import lewWebwhite from "./../Img/whiteLion.webp";
+import verylewWebwhite from "./../Img/verywhite.webp";
 import classes from "./ButtonAppBar.module.css";
 import MuiSwitch from "./MUISwitch";
 import styled from "@emotion/styled";
@@ -54,7 +55,7 @@ export default function ButtonAppBar(props) {
         className={props.theme === "dark" ? classes["toolbar-dark"] : classes["toolbar-light"]}
       >
         <IconButton size="large" edge="start" aria-label="menu" sx={{ mr: 1 }}>
-          <ProfileImage src={profImg} className={classes.imgprof} alt="Logo" />
+          <ProfileImage src={verylewWebwhite} className={classes.imgprof} alt="Logo" />
         </IconButton>
 
         <BrowserRouter>

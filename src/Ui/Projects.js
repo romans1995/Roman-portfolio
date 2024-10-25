@@ -13,7 +13,7 @@ import aroundP from "../Img/aroundP.png";
 import firstP from "../Img/todolist.jpeg";
 import sntimntor from "../Img/simp.jpeg";
 import vegee from "../Img/vege.jpeg";
-import python from "../Img/python.jpeg";
+import milana from "../Img/milana.webp";
 import mp3 from "../Img/mp3.jpeg";
 import wordpress from "../Img/wordpress.jpeg";
 import med from "../Img/med.jpeg";
@@ -44,13 +44,14 @@ const Proj = [
   //   url: "https://around-r.chickenkiller.com/around-react",
   // },
   
-  // {
-  //   id: 4,
-  //   Name: "python Pong game code",
-  //   image: python,
-  //   text: "This is a pong game that built with python",
-  //   url: "https://github.com/romans1995/python",
-  // },
+  {
+    id: 4,
+    Name: "Ecommerce store Milana Beauty shop",
+    image: milana,
+    text: "This is a ecommerce website for a beauty shop I made this website for a client ",
+    url: "https://milanabeauty.co.il/",
+  
+  },
   {
     id: 6,
     Name: "Vera Khrupa Photography",

@@ -1,21 +1,28 @@
 .aboutwidth {
     display: flex;
     align-items: center;
-    background-image: url(./Img/stars.webp);
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    /* flex-direction: column; */
 }
 
-img.main-header_whiteBg {
+/* img.main-header_whiteBg {
     background-repeat: no-repeat;
     object-fit: cover;
     opacity: 0.3;
     height: auto;
     width: 100%;
-}
+} */
 
 .imag {
-    font-family: math;
-    max-height: 90vh;
-    border-radius: 300px;
+   
+    z-index: 1;
+    width: 500px;
+    position: relative;
+
 }
 
 .title {
@@ -23,10 +30,10 @@ img.main-header_whiteBg {
     text-shadow: -3px 1px #0000007a;
 }
 
-.secondflex {
+/* .secondflex {
     display: flex;
     flex-direction: column;
-}
+} */
 
 p {
     font-weight: lighter;
@@ -34,9 +41,26 @@ p {
     font-family: ui-serif;
 }
 
-.fade-in {
-    animation: fadeIn 1s ease-in-out;
+.aboutline{
+    width: 115%;
+    height: 170px;
+    max-width: 115%;
+    background-color: #4285f4;
+    margin-bottom: -30px;
+    margin-right: -15px;
+    overflow: hidden;
+    transform: rotate(-5deg);
 }
+.aboutLeft{
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/* .fade-in {
+    animation: fadeIn 1s ease-in-out;
+}  */
 
 @keyframes fadeIn {
     from {
@@ -50,18 +74,18 @@ p {
 }
 
 @media only screen and (max-width: 1200px) {
-    .imag {
+    /* .imag {
         max-height: 70vh;
         border-radius: 300px;
-    }
-    .title {
+    } */
+    /* .title {
         font-size: xxx-large;
         text-shadow: -3px 1px #0000007a;
     }
     .secondflex {
         display: flex;
         flex-direction: column;
-    }
+    } */
 }
 
 @media only screen and (max-width: 640px) {
@@ -70,10 +94,10 @@ p {
         font-size: 12px;
         font-family: ui-serif;
     }
-    .aboutwidth {
+    /* .aboutwidth {
         display: block;
-    }
-    .title {
+    } */
+    /* .title {
         font-size: xxx-large;
         text-shadow: -3px 1px #0000007a;
         text-align: center;
@@ -82,10 +106,10 @@ p {
     .longText {
         margin: auto;
         text-align: center;
-    }
-    .imag {
+    } */
+    /* .imag {
         width: 247px;
         margin: 0 auto;
         display: block;
-    }
+    } */
 }

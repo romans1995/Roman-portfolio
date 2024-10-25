@@ -7,8 +7,7 @@ import styled from "@emotion/styled";
 const About = (props) => {
 
     const Container = styled("div")`
-      background-color: #ffffff00;
-    position: absolute;
+      background-color: #1c313a;
     top: 0%;
     color: white;
     padding: 0px;
@@ -31,24 +30,16 @@ const About = (props) => {
   
   return (
     <Container id="about" className={`${classes.aboutwidth} ${classes.fadeIn}`}>
-      <img className={classes.imag} src={profImg} alt="Roman" />
+<div className={classes.aboutLeft}><img className={classes.imag} src={profImg} alt="Roman" /></div>
+      <div className={`${classes.aboutline}`}/>
       <div className={classes.secondflex}>
         <h1 className={classes.title} id ="about" >About</h1>
-        <p>Hello, I'm Roman Stavinsky.</p>
-
-        <p>My journey into the world of coding began at the age of 10, when I started experimenting with basic HTML for fun. What started as a hobby quickly evolved into a deep passion for programming.</p>
-
-        <p>Today, I am an experienced Full-Stack Developer with a strong focus on MongoDB and React. I have had the opportunity to work with three distinct companies that have shaped my career:</p>
-
-        <ul>
-          <li><strong>MXI</strong>: Here, I developed landing pages from scratch, showcasing my ability to create visually engaging and highly functional web experiences.</li>
-          <li><strong>Endlessroll</strong>: In this role, I tackled numerous bugs within a Magento platform, leveraging my expertise in PHP to provide efficient solutions and improve system performance.</li>
-          <li><strong>MeNow</strong>: This company provided me with the chance to work on diverse projects, further honing my skills in Full-Stack development and expanding my technical knowledge.</li>
-        </ul>
-
-        <p>The website you are currently visiting is built with React and hosted on Hostinger, demonstrating my commitment to leveraging cutting-edge technologies.</p>
-
-        <p>Driven by a continuous desire to learn and explore new advancements, I am currently working as a freelancer. I am always eager to take on new challenges and contribute to innovative projects.</p>
+      <div>
+        <p className={classes.text}>
+          Hi, I'm Roman. I'm a full stack developer with a passion for creating web applications, Since I can remember, I've been drawn to coding. At 10, I started with basic HTML and just kept going. Today, I'm a Full-Stack Developer, specializing in MongoDB and React. I excel in crafting dynamic, user-friendly websites that meet business goals and exceed user expectations. My skill set includes front-end and back-end development, ensuring cohesive and well-integrated digital experiences. I'm always ready for the next challenge.
+        </p>
+      </div>
+ 
 
       </div>
     </Container>

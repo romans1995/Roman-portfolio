@@ -31,11 +31,7 @@ const Main = (props) => {
       ) : (
         <img className={classes.image} src={whiteBg} alt="white background" />
       )}
-      {showAbout ? (
-        <About  />
-      ) : (
-        <Vision onButtonClick={handleBtnClick} className="vision" />
-      )}
+      <Vision onButtonClick={handleBtnClick} className="vision" />
     </div>
   );
 };

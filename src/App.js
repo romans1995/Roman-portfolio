@@ -29,7 +29,7 @@ function App() {
         </header>
         <main>
           <Main theme={appliedTheme.palette.type} />
-          {/* <About theme={appliedTheme.palette.type} /> */}
+          <About theme={appliedTheme.palette.type} />
           <Carousel theme={appliedTheme.palette.type} />
           <Projects theme={appliedTheme.palette.type} />
           

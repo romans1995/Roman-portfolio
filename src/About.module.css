@@ -1,12 +1,34 @@
 .aboutwidth {
+    background-color: #1c313a;
+    top: 0%;
+    color: white;
+    padding: 0px;
     display: flex;
+    z-index: -1;
+    flex-direction: column;
     align-items: center;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    /* flex-direction: column; */
+}
+.aboutline1{
+    width: 103%;
+    height: 170px;
+    max-width: 115%;
+    background-color: #1c313a;
+    margin-bottom: -19px;
+    margin-right: -15px;
+    overflow-x: hidden;
+    transform: rotate(-5deg);
+    z-index: auto;
+}
+.aboutline2{
+    width: 103%;
+    height: 170px;
+    max-width: 115%;
+    background-color: #1c313a;
+    margin-bottom: -19px;
+    margin-right: -15px;
+    overflow-x: hidden;
+    transform: rotate(-5deg);
+    z-index: 2;
 }
 
 /* img.main-header_whiteBg {
@@ -18,11 +40,8 @@
 } */
 
 .imag {
-   
-    z-index: 1;
-    width: 500px;
-    position: relative;
-
+    width: 250px;
+    transform: scaleX(-1);
 }
 
 .title {
@@ -42,20 +61,28 @@ p {
 }
 
 .aboutline{
-    width: 115%;
+    width: 122%;
     height: 170px;
     max-width: 115%;
     background-color: #4285f4;
-    margin-bottom: -30px;
+    margin-bottom: -19px;
     margin-right: -15px;
-    overflow: hidden;
+    overflow-x: hidden;
     transform: rotate(-5deg);
+    z-index: auto;
 }
-.aboutLeft{
-    width: 50%;
+
+.aboutLeft {
+    width: auto; /* or specify width as needed */
+    position: absolute; /* keeps it anchored to the right side */
+    right: 0; /* aligns it to the right */
+    top: 600px; /* keeps the vertical alignment */
     text-align: center;
-    display: inline-block;
+    z-index: 1;
+    overflow: hidden; /* prevents overflow */
 }
+
+
 
 
 /* .fade-in {
